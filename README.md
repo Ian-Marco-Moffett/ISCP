@@ -10,13 +10,13 @@ The ISCP endpoint/port/buffer has one reserved field which is the magic number.
 This magic number is usually 0x15C9 and should only be placed on the top of
 the buffer if the process finished it's request and wants it handled.
 
-Stack layout:
+#### Stack layout:
 
-|---------|
-| 0x15CP  | - top
-|---------|
+|         |
+| 0x15CP  |
+|         |
 |SyscallID|
-|---------|
+|         |
 |  Args.. |
 |         |
 |   ...   |
