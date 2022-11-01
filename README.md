@@ -12,15 +12,15 @@ the buffer if the process finished it's request and wants it handled.
 
 #### Stack layout:
 
-|         |
-| 0x15CP  |
-|         |
-|SyscallID|
-|         |
-|  Args.. |
-|         |
-|   ...   |
-|         |
+|         |<br>
+| 0x15CP  |<br>
+|         |<br>
+|SyscallID|<br>
+|         |<br>
+|  Args.. |<br>
+|         |<br>
+|   ...   |<br>
+|         |<br>
 
 If a request is already pending (i.e the top of the buffer is not clear) then you should poll
 the value at the top of the buffer until it is zero, if you have the timer (example: PIT) frequency at 100 then 
