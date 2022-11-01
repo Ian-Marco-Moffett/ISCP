@@ -18,9 +18,9 @@ Stack layout:
 |SyscallID|
 |---------|
 |  Args.. |
-|---------|
+|         |
 |   ...   |
-|_________|
+|         |
 
 If a request is already pending (i.e the top of the buffer is not clear) then you should poll
 the value at the top of the buffer until it is zero, if you have the timer (example: PIT) frequency at 100 then 
