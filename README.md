@@ -4,7 +4,10 @@
 
 ### How does it work?
 Inside the process's control block, there will
-be a stack or array which can hold up to n arguments.
+be a stack or array which we will refer to as the buffer.
+
+The buffer can hold up to n arguments (n can be any amount defined by the operating system).
+
 
 The ISCP endpoint/port/buffer has one reserved field which is the magic number.
 This magic number is usually 0x15C9 and should only be placed on the top of
